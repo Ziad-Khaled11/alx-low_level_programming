@@ -1,44 +1,35 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - Entry point
- *
- * Description: A C code prints combination
- *
- * Return: Always 0 (Success)
- */
+* main - Entry Point
+* Description: A C code whichprints nums combination
+* Return: Always 0 (succes)
+*/
 int main(void)
 {
-	int num1, num2, num3;
+int firstd = 0, seconD;
 
-	num1 = 48;
-	while (num1 <= 55)
-	{
-		num2 = 49;
-		while (num2 <= 56)
-		{
-			if (num1 < num2)
-			{
-				num3 = 50;
-			while (num3 <= 57)
-			{
-				if (num2 < num3)
-				{
-				putchar(num1);
-				putchar(num2);
-				putchar(num3);
-				if (num1 + num2 + num3  != 168)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				}
-				num3++;
-			}
-			}
-			num2++;
-		}
-		num1++;
-	}
-	putchar('\n');
-	return (0);
+while (firstd <= 99)
+{
+seconD = firstd;
+while (seconD <= 99)
+{
+if (seconD != firstd)
+{
+putchar ((firstd / 10) + 48);
+putchar ((firstd % 10) + 48);
+putchar(' ');
+putchar ((seconD / 10) + 48);
+putchar ((seconD % 10) + 48);
+if (firstd != 98 || seconD != 99)
+{
+putchar(',');
+putchar(' ');
+}
+}
+seconD++;
+}
+firstd++;
+}
+putchar('\n');
+return (0);
 }
