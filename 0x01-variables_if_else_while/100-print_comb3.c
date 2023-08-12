@@ -20,10 +20,10 @@ int main(void)
 			{
 				putchar(num1);
 				putchar(num2);
-				if (num1 + num2 != 17)
+				if (num1 + num2 != 113)
 				{
-					putchar(',');
-					putchar(' ');
+				putchar(',');
+				putchar(' ');
 				}
 			}
 			num2++;
