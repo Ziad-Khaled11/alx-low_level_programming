@@ -20,8 +20,10 @@ printf("%d", temp);
 l = j + 1;
 if (j != n)
 {
-if (l *i > 9)
+if (l *i > 9 && l *i < 100)
 printf(",  ");
+else if (l *i > 100)
+printf(", ");
 else
 printf(",   ");
 }
