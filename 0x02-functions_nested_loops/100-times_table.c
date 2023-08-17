@@ -18,7 +18,7 @@ for (j = 0; j <= n; j++)
 temp = i * j;
 printf("%d", temp);
 l = j + 1;
-if (j != 9)
+if (j != n)
 {
 if (l *i > 9)
 printf(",  ");
