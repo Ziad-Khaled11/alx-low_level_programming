@@ -14,7 +14,7 @@ int main(void)
 	int i;
 
 	sum = 0;
-	for (i = 2; i < 37; i++)
+	for (i = 2; i < 34; i++)
 	{
 		next = first + second;
 		if (next % 2 == 0)
@@ -22,7 +22,7 @@ int main(void)
 		first = second;
 		second = next;
 	}
-	printf("%ld", sum);
+	printf("%ld", sum + 2);
 	putchar('\n');
 
 	return (0);
