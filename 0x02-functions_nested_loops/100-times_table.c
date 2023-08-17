@@ -22,7 +22,7 @@ if (j != n)
 {
 if (l *i > 9 && l *i < 100)
 printf(",  ");
-else if (l *i > 100)
+else if (l *i >= 100)
 printf(", ");
 else
 printf(",   ");
