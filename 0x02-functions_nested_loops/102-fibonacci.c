@@ -10,11 +10,13 @@
 
 int main(void)
 {
-	long int N, first = 1, second = 2, next;
+	long int first = 1, second = 2, next;
+
+	int i;
 
 	printf("%ld, %ld%s", first, second, ", ");
 
-	for (int i = 2; i < 50; i++)
+	for (i = 2; i < 50; i++)
 
 	{
 		next = first + second;
@@ -26,4 +28,6 @@ int main(void)
 	}
 
 	putchar('\n');
+
+	return (0);
 }
