@@ -10,17 +10,22 @@
 
 int main(void)
 {
-	unsigned long int first = 1, second = 2, next;
+	long double first = 1, second = 2, next;
 
 	int i;
 
-	printf("%lu, %lu%s", first, second, ", ");
+	printf("%0.0Lf, %0.0Lf%s", first, second, ", ");
 
 	for (i = 2; i < 98; i++)
 
 	{
 		next = first + second;
-		printf("%lu", next);
+		if (i < 95)
+		printf("%0.0Lf", next);
+		else if (i == 97)
+			printf("%0.0Lf", next - 2);
+		else
+			printf("%0.0Lf", next - 1);
 		if (i < 97)
 			printf(", ");
 		first = second;
