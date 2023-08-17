@@ -10,17 +10,17 @@
 
 int main(void)
 {
-	unsigned long long int first = 1, second = 2, next;
+	unsigned long int first = 1, second = 2, next;
 
 	int i;
 
-	printf("%llu, %llu%s", first, second, ", ");
+	printf("%lu, %lu%s", first, second, ", ");
 
 	for (i = 2; i < 98; i++)
 
 	{
 		next = first + second;
-		printf("%llu", next);
+		printf("%lu", next);
 		if (i < 97)
 			printf(", ");
 		first = second;
