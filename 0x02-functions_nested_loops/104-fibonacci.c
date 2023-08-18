@@ -10,29 +10,29 @@
 
 int main(void)
 {
-	long double first = 1, second = 2, next;
-
-	int i;
-
-	printf("%0.0Lf, %0.0Lf%s", first, second, ", ");
-
-	for (i = 2; i < 98; i++)
-
-	{
-		next = first + second;
-		if (i < 95)
-		printf("%0.0Lf", next);
-		else if (i == 97)
-			printf("%0.0Lf", next - 2);
-		else
-			printf("%0.0Lf", next - 1);
-		if (i < 97)
-			printf(", ");
-		first = second;
-		second = next;
-	}
-
-	putchar('\n');
-
-	return (0);
+int count, initial0s;
+unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, flo = 0, f20 = 0, sumo = 0;
+for (count = 1; count <= 98; count++)
+{
+if (flo > 0)
+printf("%lu", flo);
+initial0s = numLength(mx) - 1 - numLength(f1);
+while (flo > 0 && initial0s > 0)
+{
+printf("%d", 0);
+initial0s--;
+}
+printf("%lu", f1);
+sum = (f1 + f2) % mx;
+sumo = flo + f20 + (f1 + f2) / mx;
+f1 = f2;
+flo = f20;
+f2 = sum;
+f20 = sumo;
+if (count != 98)
+printf(", ");
+else
+printf("\n");
+}
+return (0);
 }
