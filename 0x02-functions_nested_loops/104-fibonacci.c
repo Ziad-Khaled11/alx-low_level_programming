@@ -1,6 +1,28 @@
 #include <stdio.h>
 
 /**
+ *  numLength - function prints
+ *
+ * @num: parameter that taken to be checked
+ *
+ * Return: length
+ */
+
+int numLength(int num)
+{
+int length = 0;
+if (!num)
+return (1);
+while (num)
+{
+num = num / 10;
+length += 1;
+}
+return (length);
+}
+
+
+/**
  * main - Entry point
  *
  * Description: A C code prints first 50 fibonacci
