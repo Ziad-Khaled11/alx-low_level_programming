@@ -8,10 +8,9 @@
 
 void print_number(int n)
 {
-	int reversed, co;
+	int reversed;
 
 	reversed = 0;
-	co = 0;
 
 	if (n > 0)
 	{
@@ -30,6 +29,7 @@ void print_number(int n)
 		_putchar(48);
 	else
 	{
+		_putchar(45);
 		n = n * -1;
 		while (n != 0)
 		{
@@ -38,11 +38,8 @@ void print_number(int n)
 		}
 		while (reversed != 0)
 		{
-			if (co < 1)
-				_putchar(45);
 			_putchar((reversed % 10) + '0');
 			reversed /= 10;
-			co++;
 		}
 	}
 }
