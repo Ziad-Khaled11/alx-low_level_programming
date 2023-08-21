@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * _strcpy - function prints
+ * *_strcpy - copies string
  *
  * @dest: parameter that taken to be checked
  * @src: parameter that taken to be checked
+ *
+ * Return: copied string
  */
 
 char *_strcpy(char *dest, char *src)
