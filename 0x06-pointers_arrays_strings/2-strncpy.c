@@ -4,7 +4,7 @@
  * *_strncpy - function prints
  *
  * @dest: parameter that taken to be checked
- * @scr: parameter that taken to be checked
+ * @src: parameter that taken to be checked
  * @n: parameter that taken to be checked
  *
  * Return: dest
