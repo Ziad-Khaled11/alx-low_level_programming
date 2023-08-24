@@ -19,7 +19,7 @@ char *cap_string(char *arr)
 		if (arr[i - 1] == ',' || arr[i - 1] == ';' || arr[i - 1] == '.' ||
 		arr[i - 1] == '?' || arr[i - 1] == '(' || arr[i - 1] == ')' ||
 		arr[i - 1] == '{' || arr[i - 1] == '}' || arr[i - 1] == ' ' ||
-		arr[i - 1] == '\t' || arr[i - 1] == '\n')
+		arr[i - 1] == '\t' || arr[i - 1] == '\n' || i == 0)
 		{
 			arr[i] = arr[i] - 32;
 		}
