@@ -13,6 +13,7 @@ char *rot13(char *arr)
 	char rot[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char ROT[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i;
+	char *p = arr;
 
 	while (*arr)
 	{
@@ -27,5 +28,5 @@ char *rot13(char *arr)
 		arr++;
 
 	}
-	return (arr);
+	return (p);
 }
