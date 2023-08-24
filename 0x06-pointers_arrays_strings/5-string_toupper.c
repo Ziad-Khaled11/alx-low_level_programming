@@ -5,6 +5,7 @@
  *
  * @arr: parameter that taken to be checked
  *
+ * Return: arr
  */
 
 char *string_toupper(char *arr)
