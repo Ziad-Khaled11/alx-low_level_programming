@@ -14,6 +14,9 @@ char *string_toupper(char *arr)
 	for (i = 0; arr[i]; i++)
 	{
 		if (arr[i] >= 97)
+		{
 			arr[i] = arr[i] - 32;
+		}
 	}
+	return (arr);
 }
