@@ -21,7 +21,7 @@ char *leet(char *arr)
 			if (*arr == letters[i] || *arr == letters[i] - 32)
 			       *arr = nums[i] + 48;
 		}
-		c++;
+		arr++;
 	}
-	return (c);
+	return (arr);
 }
