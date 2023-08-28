@@ -14,22 +14,13 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	bool found = false;
 
 	for (i = 0; s[i]; i++)
 	{
 		if (s[i] == c)
 		{
-			found = true;
-			break;
+			return (s + i);
 		}
 	}
-	if (found)
-	{
-		return (s + i);
-	}
-	else
-	{
-		return ('\0');
-	}
+	return ('\0');
 }
