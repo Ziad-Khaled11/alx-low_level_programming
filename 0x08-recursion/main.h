@@ -14,5 +14,7 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int check (char *s, int start, int end, int mod);
 int last_index (char *s);
+int inception(char *s1, char *s2);
+int wildcmp(char *sl, char *s2);
 
 #endif
