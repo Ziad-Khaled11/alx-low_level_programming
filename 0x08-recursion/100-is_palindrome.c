@@ -23,10 +23,10 @@ return (n);
  * Return: 1 if palindrome , 0 if not
  */
 
-int is palindrome(char *s)
+int is_palindrome(char *s)
 {
 int end = last_index(s);
-return (check(s, 0, end 1, end % 2));
+return (check(s, 0, end - 1, end % 2));
 }
 
 
@@ -48,5 +48,5 @@ return (1);
 else if (s[start] != s[end])
 return (0);
 else
-return (check(s, start + 1, end 1, mod));
+return (check(s, start + 1, end - 1, mod));
 }
