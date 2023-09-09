@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -7,7 +8,7 @@
  * @str: parameter that taken to be checked
  */
 
-void puts(char *str)
+void _puts(char *str)
 {
 int i = 0;
 while (str[i])
