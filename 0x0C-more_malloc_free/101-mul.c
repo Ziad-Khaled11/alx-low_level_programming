@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * puts - function prints chars
+ * _puts - function prints chars
  *
  * @str: parameter that taken to be checked
  */
@@ -79,7 +79,8 @@ int main(int argc, char const *argv[])
 (void)argc;
 if (argc != 3)
 {
-_puts("Error ");
+_puts("Error");
+_putchar('\n');
 exit(98);
 }
 
