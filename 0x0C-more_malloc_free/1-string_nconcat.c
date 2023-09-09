@@ -32,9 +32,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		str[i] = s1[i];
 	}
-	for (j = 0; j <= size2 && j <= n; j++)
+	for (j = 0; j < n; j++)
 	{
-		str[size1 + j] = s2[j];
+		str[i + j] = s2[j];
 	}
 	str[size1 + size2] = '\0';
 	return (str);
