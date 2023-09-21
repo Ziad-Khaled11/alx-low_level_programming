@@ -1,17 +1,15 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 
 /**
- * print_list - function prints list
+ * print_list - prints all linked list
+ * @h: pointer 
  *
- * @h: parameter that taken to be checked
- *
- * Return: struct
+ * Return: the number of nodes
  */
-
 size_t print_list(const list_t *h)
 {
-	size_t size = 0;
+	size_t s = 0;
 
 	while (h)
 	{
@@ -20,9 +18,8 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
-		size++;
+		s++;
 	}
 
-	return (size);
+	return (s);
 }
-
